@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness | Certificate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .cert-paper {
+            background: #fff;
+            color: #000;
+            padding: 3rem;
+            border: 15px solid #112;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+        .cert-paper h1 { font-size: 3rem; margin-bottom: 1rem; color: #112; }
+        .cert-paper h2 { font-size: 2.5rem; margin: 1rem 0; color: #003366; text-decoration: underline; }
+        @media print {
+            body * { visibility: hidden; }
+            #actual-certificate, #actual-certificate * { visibility: visible; }
+            #actual-certificate { position: absolute; left: 0; top: 0; width: 100%; border: none; }
+            nav, .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Shield<span>Sec</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="certificate.html" class="active">Certificate</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="cert-container">
+        
+        <div id="name-input-box" class="glass-card text-center" style="display:none; max-width: 500px; margin: 0 auto;">
+            <h2>Enter Your Name</h2>
+            <p>This will appear on your certificate.</p>
+            <input type="text" id="user-name-input" placeholder="John Doe" style="padding:10px; width:80%; margin:1rem 0; border-radius:4px; border:none;">
+            <br>
+            <button id="save-name-btn" class="btn-cyber">Generate</button>
+        </div>
+
+        <div id="actual-certificate" class="cert-paper" style="display:none;">
+            <h1>Certificate of Completion</h1>
+            <p>This certifies that</p>
+            <h2 id="cert-name">[Student Name]</h2>
+            <p>has successfully completed the</p>
+            <h3 style="font-size: 1.8rem; margin:1rem 0;">Interactive Phishing & Social Engineering Awareness Course</h3>
+            <p>with a passing score of <strong id="cert-score">0%</strong>.</p>
+            <br><br>
+            <div style="display:flex; justify-content:space-between; margin-top:2rem;">
+                <div>
+                    <hr style="width:200px; border-color:#000;">
+                    <p>Date: <span id="cert-date">[Date]</span></p>
+                </div>
+                <div>
+                    <hr style="width:200px; border-color:#000;">
+                    <p>ID: <span id="cert-id">[ID]</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 2rem;">
+            <button class="btn-cyber print-btn" onclick="printCertificate()">Download / Print Certificate</button>
+        </div>
+
+    </div>
+
+    <script src="js/progress.js"></script>
+    <script src="js/certificate.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

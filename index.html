@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="loading-screen"><div class="loader"></div> INITIALIZING SYSTEM...</div>
+
+    <nav>
+        <a href="index.html" class="logo">Shield<span>Sec</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero animate-fade-in">
+        <h4 class="cyber-text">Cybersecurity Awareness Training</h4>
+        <h1>Don't Take The Bait.</h1>
+        <p style="max-width: 600px; margin: 1rem auto; color: var(--text-muted);">
+            Master the skills to identify, report, and neutralize phishing attacks and social engineering threats in this interactive training platform.
+        </p>
+        <div style="margin-top: 2rem;">
+            <a href="modules.html" class="btn-cyber">Start Learning</a>
+        </div>
+
+        <div class="stats-grid animate-slide-up">
+            <div class="glass-card">
+                <h3 class="cyber-text">Modules</h3>
+                <p>8 Interactive Lessons</p>
+            </div>
+            <div class="glass-card">
+                <h3 class="cyber-text">Duration</h3>
+                <p>~45 Minutes</p>
+            </div>
+            <div class="glass-card">
+                <h3 class="cyber-text">Level</h3>
+                <p>Beginner / Intermediate</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container text-center">
+        <h2>Your Progress</h2>
+        <div class="progress-container">
+            <div class="progress-bar" id="global-progress-bar"></div>
+        </div>
+        <p id="global-progress-text" class="cyber-text">0% Completed</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ShieldSec Training. All rights reserved.</p>
+    </footer>
+
+    <script src="js/progress.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

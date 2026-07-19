@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness | Modules</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .d-none { display: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Shield<span>Sec</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="modules.html" class="active">Modules</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="module-layout">
+            <!-- Sidebar -->
+            <aside class="module-sidebar glass-card">
+                <h3 class="cyber-text" style="margin-bottom: 1rem;">Curriculum</h3>
+                <ul>
+                    <li data-target="mod1" class="active">1. Intro to Security</li>
+                    <li data-target="mod2">2. What is Phishing?</li>
+                    <li data-target="mod3">3. Types of Phishing</li>
+                    <li data-target="mod4">4. Spot the Phish (Interactive)</li>
+                    <li data-target="mod5">5. Fake Websites</li>
+                    <li data-target="mod6">6. Social Engineering</li>
+                    <li data-target="mod7">7. Case Studies</li>
+                    <li data-target="mod8">8. Best Practices</li>
+                </ul>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="glass-card">
+                
+                <!-- Module 1 -->
+                <section id="mod1" class="module-content active">
+                    <h2 class="cyber-text">Module 1: Introduction to Cybersecurity</h2>
+                    <p>Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes.</p>
+                    <br>
+                    <p><strong>The Human Element:</strong> Firewalls and encryption are strong, but the easiest way into a system is often through the front door—by tricking a human into handing over the keys.</p>
+                </section>
+
+                <!-- Module 2 -->
+                <section id="mod2" class="module-content">
+                    <h2 class="cyber-text">Module 2: What is Phishing?</h2>
+                    <p>Phishing is a type of social engineering where an attacker sends a fraudulent message designed to trick a person into revealing sensitive information or deploying malicious software on the victim's infrastructure.</p>
+                    <br>
+                    <div style="padding:1rem; border-left:4px solid var(--primary-neon); background:rgba(0,243,255,0.05);">
+                        <strong>Key Analogy:</strong> It's called "phishing" because the attacker throws out "bait" (a fake email) hoping a "fish" (you) will "bite" (click the link).
+                    </div>
+                </section>
+
+                <!-- Module 3 -->
+                <section id="mod3" class="module-content">
+                    <h2 class="cyber-text">Module 3: Types of Phishing</h2>
+                    <ul style="margin-left: 20px; line-height: 2;">
+                        <li><strong>Email Phishing:</strong> Mass emails sent to thousands of people.</li>
+                        <li><strong>Spear Phishing:</strong> Highly targeted emails addressing you by name, using gathered intelligence.</li>
+                        <li><strong>Whaling:</strong> Spear phishing aimed at executives (CEOs, CFOs).</li>
+                        <li><strong>Smishing:</strong> Phishing via SMS/Text messages.</li>
+                        <li><strong>Vishing:</strong> Voice phishing over phone calls.</li>
+                        <li><strong>Clone Phishing:</strong> Replicating a legitimate email you previously received, but swapping the safe link for a malicious one.</li>
+                    </ul>
+                </section>
+
+                <!-- Module 4 -->
+                <section id="mod4" class="module-content">
+                    <h2 class="cyber-text">Module 4: Recognizing Phishing Emails</h2>
+                    <p>Click on the suspicious elements in the email below to reveal the red flags.</p>
+                    
+                    <div class="interactive-email">
+                        <p><strong>From:</strong> <span class="phish-spot">IT Support &lt;admin@paypa1-security.com&gt;<span class="phish-tooltip">Fake Domain! Notice the '1' instead of 'l'.</span></span></p>
+                        <p><strong>Subject:</strong> <span class="phish-spot">URGENT: Your account will be suspended<span class="phish-tooltip">Urgency is used to create panic.</span></span></p>
+                        <hr style="margin: 1rem 0;">
+                        <p><span class="phish-spot">Dear Customer,<span class="phish-tooltip">Generic greeting. Real services use your name.</span></span></p>
+                        <p>We detected unusual activity. <span class="phish-spot">Please click here to verify your identity immediatly.<span class="phish-tooltip">Spelling mistake (immediatly) and a hidden, malicious link.</span></span></p>
+                        <p>Attached is the report: <span class="phish-spot">report.exe<span class="phish-tooltip">Never open unexpected .exe or .zip attachments!</span></span></p>
+                    </div>
+                </section>
+
+                <!-- Module 5 -->
+                <section id="mod5" class="module-content">
+                    <h2 class="cyber-text">Module 5: Recognizing Fake Websites</h2>
+                    <p>Attackers create pixel-perfect copies of login pages (Microsoft, Google, Banks).</p>
+                    <br>
+                    <p><strong>How to check:</strong></p>
+                    <ul>
+                        <li><strong>Check the URL:</strong> Is it `microsoft.com` or `microsoft-login-update.com`?</li>
+                        <li><strong>HTTPS is NOT enough:</strong> A padlock icon just means the connection is encrypted. Attackers can get SSL certificates for fake domains.</li>
+                        <li><strong>Look for subdomains:</strong> `paypal.com.secure-login.net` actually belongs to `secure-login.net`, not PayPal.</li>
+                    </ul>
+                </section>
+
+                <!-- Module 6 -->
+                <section id="mod6" class="module-content">
+                    <h2 class="cyber-text">Module 6: Social Engineering</h2>
+                    <p>Hackers manipulate human emotions to bypass logic. Watch out for:</p>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; margin-top:1rem;">
+                        <div class="glass-card" style="padding:1rem;"><strong>Authority:</strong> "I'm the CEO, send me iTunes gift cards."</div>
+                        <div class="glass-card" style="padding:1rem;"><strong>Fear:</strong> "Your PC is infected, call this number."</div>
+                        <div class="glass-card" style="padding:1rem;"><strong>Curiosity:</strong> "Check out pictures from the party!"</div>
+                        <div class="glass-card" style="padding:1rem;"><strong>Greed:</strong> "You won a $500 Amazon card."</div>
+                    </div>
+                </section>
+
+                <!-- Module 7 -->
+                <section id="mod7" class="module-content">
+                    <h2 class="cyber-text">Module 7: Real-World Case Studies</h2>
+                    <p><strong>The $100 Million Scam (Google & Facebook)</strong></p>
+                    <p>A hacker set up a fake company pretending to be Quanta Computer, a legitimate hardware supplier. They sent forged invoices to Google and Facebook. Employees paid them, resulting in over $100 million lost.</p>
+                    <br>
+                    <p><strong>Lesson:</strong> Always verify payment destination changes through a secondary channel (e.g., calling the supplier directly using a known good phone number).</p>
+                </section>
+
+                <!-- Module 8 -->
+                <section id="mod8" class="module-content">
+                    <h2 class="cyber-text">Module 8: Cybersecurity Best Practices</h2>
+                    <ul style="line-height:2;">
+                        <li><strong>Use a Password Manager:</strong> Never reuse passwords.</li>
+                        <li><strong>Enable MFA:</strong> Multi-Factor Authentication stops 99% of automated credential attacks.</li>
+                        <li><strong>Hover before you click:</strong> Always inspect links.</li>
+                        <li><strong>Keep Software Updated:</strong> Patching closes security holes.</li>
+                        <li><strong>Report it:</strong> Use your company's "Phish Alert" button.</li>
+                    </ul>
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="quiz.html" class="btn-success btn-cyber">Take the Final Quiz</a>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="js/progress.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

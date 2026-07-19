@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness | Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .d-none { display: none !important; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Shield<span>Sec</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="quiz.html" class="active">Quiz</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+        </ul>
+    </nav>
+
+    <div class="container animate-slide-up">
+        <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
+            
+            <div id="quiz-container">
+                <!-- Injected via quiz.js -->
+            </div>
+
+            <div id="results-container" class="d-none text-center">
+                <h2 class="cyber-text">Quiz Complete!</h2>
+                <h1 style="font-size: 4rem; margin: 1rem 0;" id="percentage-display">0%</h1>
+                <p>Score: <span id="score-display">0/15</span></p>
+                <div id="pass-message" style="margin-top: 2rem;"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/progress.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
